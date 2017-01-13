@@ -22,6 +22,7 @@
 		A51E56E41E28C804006C688F /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56E31E28C804006C688F /* TeamViewController.swift */; };
 		A51E56E61E28C94F006C688F /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56E51E28C94F006C688F /* TeamTableViewCell.swift */; };
 		A51E56E81E28CF0A006C688F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56E71E28CF0A006C688F /* AboutViewController.swift */; };
+		A51E56EA1E28DA77006C688F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56E91E28DA77006C688F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A51E56E31E28C804006C688F /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		A51E56E51E28C94F006C688F /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		A51E56E71E28CF0A006C688F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A51E56E91E28DA77006C688F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				A51E56E31E28C804006C688F /* TeamViewController.swift */,
 				A51E56E51E28C94F006C688F /* TeamTableViewCell.swift */,
 				A51E56E71E28CF0A006C688F /* AboutViewController.swift */,
+				A51E56E91E28DA77006C688F /* DetailViewController.swift */,
 			);
 			path = iOSApp2017;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51E56EA1E28DA77006C688F /* DetailViewController.swift in Sources */,
 				A51E56DC1E289A19006C688F /* SpeakersViewController.swift in Sources */,
 				A51E56E41E28C804006C688F /* TeamViewController.swift in Sources */,
 				A51E56E01E28BD94006C688F /* PerformersViewController.swift in Sources */,

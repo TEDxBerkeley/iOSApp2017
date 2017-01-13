@@ -197,6 +197,108 @@
             </objects>
             <point key="canvasLocation" x="924" y="138.98050974512745"/>
         </scene>
+        <!--detailViewController-->
+        <scene sceneID="Ke3-mk-bH7">
+            <objects>
+                <viewController storyboardIdentifier="detailViewController" title="detailViewController" id="bNw-UM-WEu" customClass="DetailViewController" customModule="iOSApp2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJ4-Ha-ayk"/>
+                        <viewControllerLayoutGuide type="bottom" id="C9W-8c-iOh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIe-uk-hky">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-oq-uCs">
+                                <rect key="frame" x="0.0" y="-2" width="375" height="671"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVM-rG-2cU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Super Uber Duper Long Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-6k-pHu">
+                                                <rect key="frame" x="46" y="207" width="283" height="86"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Director of Whatchamacallit, Master of North Pole Penguins" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o62-vr-HYf">
+                                                <rect key="frame" x="31" y="301" width="313" height="58"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TKO-aj-IK6">
+                                                <rect key="frame" x="125" y="52" width="125" height="125"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69a-Px-zBf">
+                                                <rect key="frame" x="46" y="381" width="283" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Label">
+                                                        <attributes>
+                                                            <color key="NSColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH1-7S-tCc">
+                                                <rect key="frame" x="22" y="34" width="44" height="42"/>
+                                                <state key="normal" image="hamburger"/>
+                                                <connections>
+                                                    <segue destination="faV-W3-M2F" kind="presentation" id="MxW-JQ-jgw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gH1-7S-tCc" firstAttribute="top" secondItem="OVM-rG-2cU" secondAttribute="top" constant="30" id="1WA-0i-4JG"/>
+                                            <constraint firstItem="TKO-aj-IK6" firstAttribute="top" secondItem="OVM-rG-2cU" secondAttribute="top" constant="75" id="3y7-WM-ZaL"/>
+                                            <constraint firstAttribute="trailing" secondItem="69a-Px-zBf" secondAttribute="trailing" constant="46" id="5xe-9l-OAr"/>
+                                            <constraint firstItem="jSZ-6k-pHu" firstAttribute="leading" secondItem="OVM-rG-2cU" secondAttribute="leadingMargin" constant="38" id="6LH-HX-0MO"/>
+                                            <constraint firstAttribute="bottom" secondItem="69a-Px-zBf" secondAttribute="bottom" constant="100" id="CUZ-jc-xtJ"/>
+                                            <constraint firstItem="o62-vr-HYf" firstAttribute="leading" secondItem="OVM-rG-2cU" secondAttribute="leading" constant="31" id="K8W-b8-ycr"/>
+                                            <constraint firstItem="jSZ-6k-pHu" firstAttribute="top" secondItem="TKO-aj-IK6" secondAttribute="bottom" constant="30" id="KIh-vb-u1Q"/>
+                                            <constraint firstItem="69a-Px-zBf" firstAttribute="top" secondItem="o62-vr-HYf" secondAttribute="bottom" constant="22" id="P92-Xi-m1y"/>
+                                            <constraint firstItem="69a-Px-zBf" firstAttribute="leading" secondItem="OVM-rG-2cU" secondAttribute="leading" constant="46" id="QNR-kg-jCb"/>
+                                            <constraint firstItem="TKO-aj-IK6" firstAttribute="leading" secondItem="OVM-rG-2cU" secondAttribute="leading" constant="125" id="S0h-hP-jDh"/>
+                                            <constraint firstItem="o62-vr-HYf" firstAttribute="top" secondItem="jSZ-6k-pHu" secondAttribute="bottom" constant="8" id="Ydr-AH-4W3"/>
+                                            <constraint firstAttribute="trailing" secondItem="o62-vr-HYf" secondAttribute="trailing" constant="31" id="eqI-R7-VQb"/>
+                                            <constraint firstAttribute="trailing" secondItem="TKO-aj-IK6" secondAttribute="trailing" constant="125" id="gcp-sy-kq2"/>
+                                            <constraint firstItem="gH1-7S-tCc" firstAttribute="leading" secondItem="OVM-rG-2cU" secondAttribute="leadingMargin" constant="15" id="lcH-fW-sGu"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="jSZ-6k-pHu" secondAttribute="trailing" constant="38" id="nvx-aP-4cB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OVM-rG-2cU" secondAttribute="trailing" id="ADA-PL-aul"/>
+                                    <constraint firstItem="OVM-rG-2cU" firstAttribute="top" secondItem="gNI-oq-uCs" secondAttribute="top" id="AIQ-h5-G2V"/>
+                                    <constraint firstItem="OVM-rG-2cU" firstAttribute="width" secondItem="gNI-oq-uCs" secondAttribute="width" id="e6c-5Y-KsM"/>
+                                    <constraint firstItem="OVM-rG-2cU" firstAttribute="leading" secondItem="gNI-oq-uCs" secondAttribute="leading" id="rm0-uH-ooV"/>
+                                    <constraint firstAttribute="bottom" secondItem="OVM-rG-2cU" secondAttribute="bottom" id="zds-Ab-d2n"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gNI-oq-uCs" firstAttribute="leading" secondItem="CIe-uk-hky" secondAttribute="leading" id="COW-a0-gWA"/>
+                            <constraint firstAttribute="trailing" secondItem="gNI-oq-uCs" secondAttribute="trailing" id="EFe-ba-Maw"/>
+                            <constraint firstItem="gNI-oq-uCs" firstAttribute="top" secondItem="CIe-uk-hky" secondAttribute="top" id="HMo-rp-zhb"/>
+                            <constraint firstAttribute="bottom" secondItem="gNI-oq-uCs" secondAttribute="bottom" id="MQe-ta-CkG"/>
+                            <constraint firstItem="gNI-oq-uCs" firstAttribute="width" secondItem="CIe-uk-hky" secondAttribute="width" id="kMy-vK-sS2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailBylineLabel" destination="o62-vr-HYf" id="sjB-b1-kPa"/>
+                        <outlet property="detailCopyLabel" destination="69a-Px-zBf" id="B2m-dd-k2o"/>
+                        <outlet property="detailImageView" destination="TKO-aj-IK6" id="56m-Vt-7jf"/>
+                        <outlet property="detailNameLabel" destination="jSZ-6k-pHu" id="vRc-Bo-eGo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lD4-cz-ebp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="845"/>
+        </scene>
         <!--Performers View Controller-->
         <scene sceneID="uYN-P6-Lmg">
             <objects>
@@ -441,34 +543,55 @@
                                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(content about theme)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-27-kCq">
-                                                <rect key="frame" x="43" y="108" width="289" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-27-kCq">
+                                                <rect key="frame" x="43" y="108" width="289" height="61"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="(important content about theme goes here in this slot)">
+                                                        <attributes>
+                                                            <color key="NSColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About TEDx" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwX-Mw-Q2X">
-                                                <rect key="frame" x="43" y="172" width="289" height="36"/>
+                                                <rect key="frame" x="43" y="212" width="289" height="36"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsk-fN-39B">
+                                                <rect key="frame" x="43" y="256" width="289" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="(content about theme)">
+                                                        <attributes>
+                                                            <color key="NSColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About TED" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FX-Gv-Wjb">
-                                                <rect key="frame" x="43" y="283" width="289" height="38"/>
+                                                <rect key="frame" x="43" y="323" width="289" height="38"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
                                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(content about theme)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9M-Wf-EHb">
-                                                <rect key="frame" x="43" y="329" width="289" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(content about theme)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsk-fN-39B">
-                                                <rect key="frame" x="43" y="216" width="289" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9M-Wf-EHb">
+                                                <rect key="frame" x="43" y="369" width="289" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="(content about theme)">
+                                                        <attributes>
+                                                            <color key="NSColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -647,6 +770,6 @@
         <image name="hamburger" width="43" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vmD-4L-Los"/>
+        <segue reference="MxW-JQ-jgw"/>
     </inferredMetricsTieBreakers>
 </document>
