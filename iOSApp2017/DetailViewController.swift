@@ -58,4 +58,9 @@ class DetailViewController: UIViewController {
         detailCopyLabel.textAlignment = .center
         detailCopyLabel.sizeToFit()
     }
+    
+    // Temporary lock in portrait mode.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
 }

@@ -27,6 +27,8 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // Temporary lock in portrait mode.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
 }
-

@@ -11,4 +11,12 @@ import UIKit
 
 class NavigationViewController: UIViewController {
     
+    // Temporary lock in portrait mode.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    @IBAction func exit(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

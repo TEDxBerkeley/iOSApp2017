@@ -43,8 +43,17 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.teamNameLabel.text = teamNames[indexPath.item]
         cell.teamBylineLabel.text = teamBylines[indexPath.item]
         cell.teamImageView.image = UIImage(named: teamImageUris[indexPath.item])?.circle?.imageResize(sizeChange: CGSize(width: imageDimension, height: imageDimension))
+        
+        /* this is where the magic happens, create a UIView and set its
+         backgroundColor to what ever color you like then set the cell's
+         selectedBackgroundView to your created View */
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 190/255, green: 3/255, blue: 0/255, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
         return cell
     }
+
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailViewController = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! DetailViewController
@@ -54,5 +63,10 @@ class TeamViewController: UIViewController, UITableViewDataSource, UITableViewDe
             byline: teamBylines[indexPath.item],
             description: teamDescriptions[indexPath.item])
         present(detailViewController, animated: true, completion: nil)
+    }
+    
+    // Temporary lock in portrait mode.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
     }
 }

@@ -44,8 +44,17 @@ class PerformersViewController: UIViewController, UITableViewDataSource, UITable
         cell.performerNameLabel.text = performerNames[indexPath.item]
         cell.performerBylineLabel.text = performerBylines[indexPath.item]
         cell.performerImageView.image = UIImage(named: performerImageUris[indexPath.item])?.circle?.imageResize(sizeChange: CGSize(width: imageDimension, height: imageDimension))
+        
+        /* this is where the magic happens, create a UIView and set its
+         backgroundColor to what ever color you like then set the cell's
+         selectedBackgroundView to your created View */
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 190/255, green: 3/255, blue: 0/255, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
         return cell
     }
+
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailViewController = storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! DetailViewController
@@ -55,5 +64,10 @@ class PerformersViewController: UIViewController, UITableViewDataSource, UITable
             byline: performerBylines[indexPath.item],
             description: performerDescriptions[indexPath.item])
         present(detailViewController, animated: true, completion: nil)
+    }
+    
+    // Temporary lock in portrait mode.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
     }
 }

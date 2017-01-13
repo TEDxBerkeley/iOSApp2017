@@ -31,24 +31,28 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let screenSize: CGRect = UIScreen.main.bounds
-        
-        themeCopyLabel.text = themeCopy
-        TEDxCopyLabel.text = TEDxCopy
-        TEDCopyLabel.text = TEDCopy
-        
-        themeCopyLabel.frame.size.width = screenSize.width - (sideMargin * 2)
-        TEDxCopyLabel.frame.size.width = screenSize.width - (sideMargin * 2)
-        TEDCopyLabel.frame.size.width = screenSize.width - (sideMargin * 2)
-        
-//        themeCopyLabel.sizeToFit()
-        TEDxCopyLabel.sizeToFit()
-        TEDCopyLabel.sizeToFit()
+
+        themeCopyLabel.attributedText = textWithLineSpacing(text: themeCopy)
+        TEDxCopyLabel.attributedText = textWithLineSpacing(text: TEDxCopy)
+        TEDCopyLabel.attributedText = textWithLineSpacing(text: TEDCopy)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Temporary lock in portrait mode.
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    func textWithLineSpacing(text: String) -> NSMutableAttributedString {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 10
+        
+        let attributedString = NSMutableAttributedString(string: text)
+        attributedString.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        return attributedString
     }
 }
