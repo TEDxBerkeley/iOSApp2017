@@ -15,6 +15,10 @@
 		A51E56BF1E286A3E006C688F /* iOSApp2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56BE1E286A3E006C688F /* iOSApp2017Tests.swift */; };
 		A51E56CA1E286A3E006C688F /* iOSApp2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56C91E286A3E006C688F /* iOSApp2017UITests.swift */; };
 		A51E56DA1E289080006C688F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56D91E289080006C688F /* NavigationViewController.swift */; };
+		A51E56DC1E289A19006C688F /* SpeakersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56DB1E289A19006C688F /* SpeakersViewController.swift */; };
+		A51E56DE1E28A4D7006C688F /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56DD1E28A4D7006C688F /* SpeakerTableViewCell.swift */; };
+		A51E56E01E28BD94006C688F /* PerformersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56DF1E28BD94006C688F /* PerformersViewController.swift */; };
+		A51E56E21E28C21D006C688F /* PerformerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E56E11E28C21D006C688F /* PerformerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		A51E56C91E286A3E006C688F /* iOSApp2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp2017UITests.swift; sourceTree = "<group>"; };
 		A51E56CB1E286A3E006C688F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51E56D91E289080006C688F /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		A51E56DB1E289A19006C688F /* SpeakersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersViewController.swift; sourceTree = "<group>"; };
+		A51E56DD1E28A4D7006C688F /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
+		A51E56DF1E28BD94006C688F /* PerformersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformersViewController.swift; sourceTree = "<group>"; };
+		A51E56E11E28C21D006C688F /* PerformerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				A51E56B21E286A3E006C688F /* LaunchScreen.storyboard */,
 				A51E56B51E286A3E006C688F /* Info.plist */,
 				A51E56D91E289080006C688F /* NavigationViewController.swift */,
+				A51E56DB1E289A19006C688F /* SpeakersViewController.swift */,
+				A51E56DD1E28A4D7006C688F /* SpeakerTableViewCell.swift */,
+				A51E56DF1E28BD94006C688F /* PerformersViewController.swift */,
+				A51E56E11E28C21D006C688F /* PerformerTableViewCell.swift */,
 			);
 			path = iOSApp2017;
 			sourceTree = "<group>";
@@ -265,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51E56DC1E289A19006C688F /* SpeakersViewController.swift in Sources */,
+				A51E56E01E28BD94006C688F /* PerformersViewController.swift in Sources */,
 				A51E56DA1E289080006C688F /* NavigationViewController.swift in Sources */,
+				A51E56DE1E28A4D7006C688F /* SpeakerTableViewCell.swift in Sources */,
 				A51E56AC1E286A3E006C688F /* MainViewController.swift in Sources */,
+				A51E56E21E28C21D006C688F /* PerformerTableViewCell.swift in Sources */,
 				A51E56AA1E286A3E006C688F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
