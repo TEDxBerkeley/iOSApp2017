@@ -200,7 +200,7 @@
         <!--Performers View Controller-->
         <scene sceneID="uYN-P6-Lmg">
             <objects>
-                <viewController id="97f-k6-gzm" customClass="PerformersViewController" customModule="iOSApp2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="performersViewController" id="97f-k6-gzm" customClass="PerformersViewController" customModule="iOSApp2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I4a-Ca-ctE"/>
                         <viewControllerLayoutGuide type="bottom" id="i8N-mA-I04"/>
@@ -361,6 +361,9 @@
                                 <state key="normal" title="Team">
                                     <color key="titleColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nZe-cX-FAH" kind="show" id="htz-dX-6DP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-dk-0JR">
                                 <rect key="frame" x="0.0" y="437" width="375" height="87"/>
@@ -398,11 +401,115 @@
             </objects>
             <point key="canvasLocation" x="924" y="-618.44077961019491"/>
         </scene>
+        <!--Team View Controller-->
+        <scene sceneID="CAK-Vi-Fxv">
+            <objects>
+                <viewController storyboardIdentifier="teamViewController" id="nZe-cX-FAH" customClass="TeamViewController" customModule="iOSApp2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m4S-4i-MUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="UOG-6i-6bX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L7c-rJ-BvH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RfW-ke-oFN">
+                                <rect key="frame" x="0.0" y="115" width="376" height="552"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.16862745100000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.70588235290000001" green="0.031372549020000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamCell" id="ZSn-K6-CYf" customClass="TeamTableViewCell" customModule="iOSApp2017" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="376" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZSn-K6-CYf" id="uLJ-zc-8pS">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="106"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEN-kU-nRZ">
+                                                    <rect key="frame" x="33" y="28" width="50" height="50"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="John Doe" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRY-XL-eFA">
+                                                    <rect key="frame" x="111" y="28" width="210" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="the myth, the man, the legend" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edS-bv-6pd">
+                                                    <rect key="frame" x="111" y="51" width="210" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.90196078430000004" green="0.16862745100000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="edS-bv-6pd" firstAttribute="top" secondItem="GRY-XL-eFA" secondAttribute="bottom" constant="2" id="CwV-Ud-pbJ"/>
+                                                <constraint firstItem="edS-bv-6pd" firstAttribute="leading" secondItem="KEN-kU-nRZ" secondAttribute="trailing" constant="28" id="LqV-5c-wOE"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="edS-bv-6pd" secondAttribute="trailing" constant="47" id="Nrm-9F-eCR"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="edS-bv-6pd" secondAttribute="bottom" constant="20" id="OO8-Pa-hEy"/>
+                                                <constraint firstItem="KEN-kU-nRZ" firstAttribute="leading" secondItem="uLJ-zc-8pS" secondAttribute="leadingMargin" constant="25" id="Qh8-c1-Cl3"/>
+                                                <constraint firstItem="GRY-XL-eFA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uLJ-zc-8pS" secondAttribute="topMargin" constant="10" id="SHK-ky-vFR"/>
+                                                <constraint firstItem="GRY-XL-eFA" firstAttribute="leading" secondItem="KEN-kU-nRZ" secondAttribute="trailing" constant="28" id="ekS-jZ-3mz"/>
+                                                <constraint firstItem="KEN-kU-nRZ" firstAttribute="centerY" secondItem="uLJ-zc-8pS" secondAttribute="centerY" id="wBq-w4-1g5"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="GRY-XL-eFA" secondAttribute="trailing" constant="47" id="yRt-l0-0Ro"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="teamBylineLabel" destination="edS-bv-6pd" id="F3a-NE-z7N"/>
+                                            <outlet property="teamImageView" destination="KEN-kU-nRZ" id="PrI-Wb-DQU"/>
+                                            <outlet property="teamNameLabel" destination="GRY-XL-eFA" id="8fR-jW-vo4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="L7c-rJ-BvH" id="hnO-VP-q4d"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iP-sY-i9q">
+                                <rect key="frame" x="31" y="35" width="44" height="42"/>
+                                <state key="normal" image="hamburger"/>
+                                <connections>
+                                    <segue destination="faV-W3-M2F" kind="presentation" id="pBt-X6-Hr1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5A-Sq-vK2">
+                                <rect key="frame" x="96" y="57" width="280" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TEDxBerkeley 2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3r-Xz-CqB">
+                                <rect key="frame" x="96" y="35" width="279" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.16862745100000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b3r-Xz-CqB" firstAttribute="leading" secondItem="2iP-sY-i9q" secondAttribute="trailing" constant="21" id="EW2-zz-Nge"/>
+                            <constraint firstItem="2iP-sY-i9q" firstAttribute="leading" secondItem="L7c-rJ-BvH" secondAttribute="leadingMargin" constant="15" id="RIF-qh-dIU"/>
+                            <constraint firstItem="b3r-Xz-CqB" firstAttribute="top" secondItem="m4S-4i-MUS" secondAttribute="bottom" constant="18" id="bQY-jK-LML"/>
+                            <constraint firstItem="z5A-Sq-vK2" firstAttribute="top" secondItem="b3r-Xz-CqB" secondAttribute="bottom" constant="-2" id="efI-Bx-A9M"/>
+                            <constraint firstItem="z5A-Sq-vK2" firstAttribute="leading" secondItem="2iP-sY-i9q" secondAttribute="trailing" constant="21" id="kTC-yd-kWi"/>
+                            <constraint firstItem="2iP-sY-i9q" firstAttribute="top" secondItem="m4S-4i-MUS" secondAttribute="bottom" constant="15" id="tMM-Yu-bBk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="teamTableView" destination="RfW-ke-oFN" id="wxV-js-2tI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpp-o8-4cl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2540" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hamburger" width="43" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vPP-dw-vbi"/>
+        <segue reference="pBt-X6-Hr1"/>
     </inferredMetricsTieBreakers>
 </document>
