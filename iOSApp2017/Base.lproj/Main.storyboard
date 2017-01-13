@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="con·stel·late" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GD-mc-Dqa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="con·stel·late*" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GD-mc-Dqa">
                                 <rect key="frame" x="40" y="259" width="294" height="63"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="43"/>
                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -374,6 +374,9 @@
                                 <state key="normal" title="About">
                                     <color key="titleColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="B1h-Jj-1D1" kind="show" id="WIp-9s-fOw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078430000004" green="0.1176470588" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -400,6 +403,140 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mD4-QP-mIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="924" y="-618.44077961019491"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="599-7a-aRz">
+            <objects>
+                <viewController storyboardIdentifier="aboutViewController" id="B1h-Jj-1D1" customClass="AboutViewController" customModule="iOSApp2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Oo-hM-Z1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="GcG-E8-jTy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lJm-qe-XUX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfm-li-xgH">
+                                <rect key="frame" x="30" y="35" width="44" height="42"/>
+                                <state key="normal" image="hamburger"/>
+                                <connections>
+                                    <segue destination="faV-W3-M2F" kind="presentation" id="vmD-4L-Los"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TEDxBerkeley 2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auI-lG-ds6">
+                                <rect key="frame" x="95" y="38" width="234" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECb-qy-Nzs">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7lz-Kp-kHz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TEDxBerkeley 2017 : con·stel·late*" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ia-kg-xKk">
+                                                <rect key="frame" x="43" y="28" width="289" height="72"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(content about theme)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-27-kCq">
+                                                <rect key="frame" x="43" y="108" width="289" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About TEDx" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwX-Mw-Q2X">
+                                                <rect key="frame" x="43" y="172" width="289" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About TED" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FX-Gv-Wjb">
+                                                <rect key="frame" x="43" y="283" width="289" height="38"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(content about theme)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9M-Wf-EHb">
+                                                <rect key="frame" x="43" y="329" width="289" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(content about theme)" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsk-fN-39B">
+                                                <rect key="frame" x="43" y="216" width="289" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FwX-Mw-Q2X" firstAttribute="leading" secondItem="7lz-Kp-kHz" secondAttribute="leading" constant="43" id="0IQ-DZ-qkp"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xsk-fN-39B" secondAttribute="trailing" constant="43" id="2a9-Ym-5Yp"/>
+                                            <constraint firstAttribute="trailing" secondItem="zEc-27-kCq" secondAttribute="trailing" constant="43" id="5rg-Jf-lBU"/>
+                                            <constraint firstAttribute="trailing" secondItem="FwX-Mw-Q2X" secondAttribute="trailing" constant="43" id="6ne-LU-qYS"/>
+                                            <constraint firstItem="Z9M-Wf-EHb" firstAttribute="top" secondItem="5FX-Gv-Wjb" secondAttribute="bottom" constant="8" id="Aex-7a-kXq"/>
+                                            <constraint firstItem="zEc-27-kCq" firstAttribute="top" secondItem="1ia-kg-xKk" secondAttribute="bottom" constant="8" id="E6M-YH-3oq"/>
+                                            <constraint firstItem="zEc-27-kCq" firstAttribute="leading" secondItem="7lz-Kp-kHz" secondAttribute="leading" constant="43" id="EFs-Rf-eVy"/>
+                                            <constraint firstItem="1ia-kg-xKk" firstAttribute="leading" secondItem="7lz-Kp-kHz" secondAttribute="leading" constant="43" id="Jde-PB-H5Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="5FX-Gv-Wjb" secondAttribute="trailing" constant="43" id="Lca-Bu-YH7"/>
+                                            <constraint firstItem="1ia-kg-xKk" firstAttribute="top" secondItem="7lz-Kp-kHz" secondAttribute="top" constant="28" id="SMp-Il-1nS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Z9M-Wf-EHb" secondAttribute="bottom" constant="100" id="Szl-Aj-5v2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z9M-Wf-EHb" secondAttribute="trailing" constant="43" id="Uo6-HL-iWZ"/>
+                                            <constraint firstItem="5FX-Gv-Wjb" firstAttribute="top" secondItem="Xsk-fN-39B" secondAttribute="bottom" constant="44" id="Vmx-6x-8cU"/>
+                                            <constraint firstItem="5FX-Gv-Wjb" firstAttribute="leading" secondItem="7lz-Kp-kHz" secondAttribute="leading" constant="43" id="X2f-QP-uPA"/>
+                                            <constraint firstItem="Xsk-fN-39B" firstAttribute="top" secondItem="FwX-Mw-Q2X" secondAttribute="bottom" constant="8" id="ZsP-k8-NdR"/>
+                                            <constraint firstAttribute="trailing" secondItem="1ia-kg-xKk" secondAttribute="trailing" constant="43" id="cp3-LS-BTO"/>
+                                            <constraint firstItem="Z9M-Wf-EHb" firstAttribute="leading" secondItem="7lz-Kp-kHz" secondAttribute="leading" constant="43" id="g4C-9V-PKB"/>
+                                            <constraint firstItem="FwX-Mw-Q2X" firstAttribute="top" secondItem="zEc-27-kCq" secondAttribute="bottom" constant="43" id="hHD-Lb-ZFV"/>
+                                            <constraint firstItem="Xsk-fN-39B" firstAttribute="leading" secondItem="7lz-Kp-kHz" secondAttribute="leading" constant="43" id="pzl-6F-pe2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7lz-Kp-kHz" secondAttribute="bottom" id="11L-mn-e7J"/>
+                                    <constraint firstItem="7lz-Kp-kHz" firstAttribute="width" secondItem="ECb-qy-Nzs" secondAttribute="width" id="2Sq-Iz-J3z"/>
+                                    <constraint firstAttribute="trailing" secondItem="7lz-Kp-kHz" secondAttribute="trailing" id="O25-6M-ak5"/>
+                                    <constraint firstItem="7lz-Kp-kHz" firstAttribute="top" secondItem="ECb-qy-Nzs" secondAttribute="top" id="b9n-hL-LWS"/>
+                                    <constraint firstItem="7lz-Kp-kHz" firstAttribute="leading" secondItem="ECb-qy-Nzs" secondAttribute="leading" id="fOE-CN-Rmj"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1Q-yY-Qco">
+                                <rect key="frame" x="95" y="58" width="280" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.16862745100000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ECb-qy-Nzs" firstAttribute="centerX" secondItem="lJm-qe-XUX" secondAttribute="centerX" id="0vp-6p-x81"/>
+                            <constraint firstItem="GcG-E8-jTy" firstAttribute="top" secondItem="ECb-qy-Nzs" secondAttribute="bottom" id="BJg-AR-2HB"/>
+                            <constraint firstItem="qfm-li-xgH" firstAttribute="top" secondItem="0Oo-hM-Z1r" secondAttribute="bottom" constant="15" id="Bsc-jG-76j"/>
+                            <constraint firstItem="auI-lG-ds6" firstAttribute="leading" secondItem="qfm-li-xgH" secondAttribute="trailing" constant="21" id="JMk-eH-J4x"/>
+                            <constraint firstItem="ECb-qy-Nzs" firstAttribute="leading" secondItem="lJm-qe-XUX" secondAttribute="leadingMargin" constant="-16" id="Oyy-nb-6nm"/>
+                            <constraint firstItem="qfm-li-xgH" firstAttribute="leading" secondItem="lJm-qe-XUX" secondAttribute="leadingMargin" constant="14" id="Umv-VX-FQi"/>
+                            <constraint firstItem="ECb-qy-Nzs" firstAttribute="top" secondItem="0Oo-hM-Z1r" secondAttribute="bottom" constant="96" id="VxR-mB-Qwf"/>
+                            <constraint firstItem="f1Q-yY-Qco" firstAttribute="leading" secondItem="qfm-li-xgH" secondAttribute="trailing" constant="21" id="ltw-cW-wru"/>
+                            <constraint firstItem="f1Q-yY-Qco" firstAttribute="top" secondItem="auI-lG-ds6" secondAttribute="bottom" constant="-2" id="onm-Xs-Gmp"/>
+                            <constraint firstItem="auI-lG-ds6" firstAttribute="top" secondItem="0Oo-hM-Z1r" secondAttribute="bottom" constant="18" id="v2f-QT-l6i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ECb-qy-Nzs" secondAttribute="trailing" constant="-16" id="vnc-nb-VPU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TEDCopyLabel" destination="Z9M-Wf-EHb" id="XMh-he-vw4"/>
+                        <outlet property="TEDTitleLabel" destination="5FX-Gv-Wjb" id="NKM-4n-3Ng"/>
+                        <outlet property="TEDxCopyLabel" destination="Xsk-fN-39B" id="Ek3-v5-Kzj"/>
+                        <outlet property="TEDxTitleLabel" destination="FwX-Mw-Q2X" id="yA2-DL-jCi"/>
+                        <outlet property="themeCopyLabel" destination="zEc-27-kCq" id="C0A-N6-dnN"/>
+                        <outlet property="themeTitleLabel" destination="1ia-kg-xKk" id="NxD-On-za2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODv-jZ-yfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.8" y="-618.44077961019491"/>
         </scene>
         <!--Team View Controller-->
         <scene sceneID="CAK-Vi-Fxv">
@@ -510,6 +647,6 @@
         <image name="hamburger" width="43" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pBt-X6-Hr1"/>
+        <segue reference="vmD-4L-Los"/>
     </inferredMetricsTieBreakers>
 </document>
